@@ -1,9 +1,9 @@
 # BlazorWebAppSIMDDetectExample
 
-Blazor Web App SIMD Detect Example (this repo)
+Blazor Web App SIMD Detect Example (this repo)  
 [BlazorWebAppSIMDDetectExample](https://github.com/LostBeard/BlazorWebAppSIMDDetectExample)
 
-Blazor WebAssembly Standalone SIMD Detect Example
+Blazor WebAssembly Standalone SIMD Detect Example  
 [BlazorWASMSIMDDetectExample](https://github.com/LostBeard/BlazorWASMSIMDDetectExample)
 
 This repo demos SIMD detection and loading of a compatible project build so that the advantages of SIMD can be used when available and also allows the app to run when they are not.  
