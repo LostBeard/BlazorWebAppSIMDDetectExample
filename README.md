@@ -1,4 +1,4 @@
-# BlazorWebAppSIMDDetectExample
+# Blazor Web App SIMD Detect Example
 
 Blazor Web App SIMD Detect Example (this repo)  
 [BlazorWebAppSIMDDetectExample](https://github.com/LostBeard/BlazorWebAppSIMDDetectExample)
