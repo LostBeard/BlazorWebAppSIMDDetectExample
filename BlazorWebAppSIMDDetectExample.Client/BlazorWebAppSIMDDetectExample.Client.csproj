@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<NoDefaultLaunchSettingsFile>true</NoDefaultLaunchSettingsFile>
+		<StaticWebAssetProjectMode>Default</StaticWebAssetProjectMode>
+		<CompressionEnabled>false</CompressionEnabled>
+		<Configurations>Debug;Release;ReleaseCompat</Configurations>
+	</PropertyGroup>
+	
+	<PropertyGroup Condition=" '$(Configuration)' == 'ReleaseCompat' ">
+		<WasmEnableSIMD>false</WasmEnableSIMD>
+		<BlazorWebAssemblyJiterpreter>false</BlazorWebAssemblyJiterpreter>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
+		<PackageReference Include="SpawnDev.BlazorJS.WebWorkers" Version="2.2.38" />
+	</ItemGroup>
+
+</Project>
