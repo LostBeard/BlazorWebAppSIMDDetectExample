@@ -59,10 +59,10 @@
             var webAssemblyConfig = {
                 loadBootResource: function (type, name, defaultUri, integrity) {
                     if (verboseStart) console.log(`Loading: '${type}', '${name}', '${defaultUri}', '${integrity}'`);
-                    // united runtime cannot load globalization from _frameworkCompat/ but wasm runtime can and may need to for PWA purposes
-                    let useCompatThisResource = useCompatMode && (runtimeType !== 'united' || type !== 'globalization');
-                    let newUrl = useCompatThisResource ? defaultUri.replace('_framework/', '_frameworkCompat/') : defaultUri.replace('_frameworkCompat/', '_framework/');
-                    return newUrl;
+                    if (useCompatMode) {
+                        let newUrl = defaultUri.replace('_framework/', '_frameworkCompat/');
+                        return newUrl;
+                    }
                 },
             };
             if (runtimeType === 'wasm') {
